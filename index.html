@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/tarjeta-de-debito.ico" type="image/x-icon">
+    <title>Card - Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="grid">
+            <div class="background-degr">
+                <div class="card2">
+                    <div class="border"></div>
+                    <div class="border-gray">
+                        <label class="result-cvc" for="">000</label>
+                    </div>
+                    <p class="effect-text">
+                        --------- - - - --<br>
+                        ----------- ------ <br>
+                        --------- - - - - -
+                    </p>
+                </div>
+                
+                <div class="card1">
+                    <div class="flex-rounded">
+                        <div class="rounded1"></div>
+                        <div class="rounded2"></div>
+                    </div>
+                    <div class="result-flex">
+                        <p class="result-1">0000</p>
+                        <p class="result-2">0000</p>
+                        <p class="result-3">0000</p>
+                        <p class="result-4">0000</p>
+                    </div>
+
+                    <div class="result-card">
+                        <label class="name-tarjet" for="">Nombre Cuenta</label>
+                        <label class="fecha-tarjet" for=""><span class="span-result-month">00</span>/<span class="span-result-year">00</span></label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="background-whit">
+                <form class="formulario" action="">
+                    <label class="input-text" for="name">Nombre Cuenta:</label>
+                    <input class="input-text text-bottom" type="text" name="" id="name"
+                        placeholder="Ingrese el nombre de su cuenta">
+                    <P class="paragraph-visible-name name-card">The format is not correct</P>
+                    <label class="input-text" for="number-card">Número de Tarjeta:</label>
+                    <input maxlength="19" class="input-text text-bottom" type="text" name="" id="number-card"
+                        placeholder="Ingrese el número de su tarjeta">
+                    <P class="paragraph-visible-number number-card">Wrong format, number only</P>
+                    <div class="grid-data">
+                        <div class="d-block">
+                            <label for="month">Fecha Exp. (MM/YY)</label>
+                            <div class="grid-date">
+                                <input maxlength="2" class="text-grid text-bottom" type="text" name="" id="month" placeholder="MM">
+                                <input maxlength="2" class="text-grid text-bottom" type="text" name="" id="year" placeholder="YY">
+                            </div>
+                          <div class="grid-date">
+                              <P class="paragraph-visible-month date-month">The format is not correct</P>
+                              <P class="paragraph-visible-year date-year">The format is not correct</P>
+                          </div>
+                        </div>
+                        <div>
+                            <label for="cvc">Cvc</label>
+                            <input maxlength="3" class="text-cvc text-bottom-cvc" type="text" name="" id="cvc" placeholder="cvc Ejm. 123">
+                            <P class="paragraph-visible-cvc cvc">The format is not correct</P>
+                        </div>
+                    </div>
+                    <a class="btn-submit" href="#">Confirmar</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
